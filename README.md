@@ -2,8 +2,6 @@
 
 **Research:** *Garbage In, Garbage Out: Examining the Implications of Poor Data Quality for Decision-Making in Nigeria’s Import–Export Sector.*
 
-**Group 5**, Technical Writing and Presentation, Department of Data and Information Science, University of Ibadan.
-
 ## Overview
 
 This repository contains the research workflow and interactive demonstration for assessing selected UN Comtrade records relevant to Nigeria. The work has five objectives: (1) assess data quality, (2) examine effects of quality issues on analytical results, (3) study sensitivity of trade patterns and rankings, (4) consider potential implications for import–export decisions, and (5) demonstrate the assessment in an interactive application.
@@ -28,6 +26,40 @@ Quality flags are not confirmed errors. Sensitivity comparisons are not verified
 | `data/` | Put the three original UN Comtrade datasets here if they can be redistributed. |
 
 **Important:** `app.py` is a legacy alternative interface. Launch **`streamlit_app.py`**, not `app.py`. The older `Trade_Decision_Lab_Colab.ipynb` is also retained for reference; the numbered notebooks above are the intended reading order.
+
+## Accessing the research datasets
+
+The three datasets used in this research are hosted on Google Drive because of their size. They are not included in this GitHub repository.
+
+### Option 1: Automatic download using Google Colab (recommended)
+
+1. Open `notebooks/01_Data_Acquisition_Preprocessing_and_EDA.ipynb` in Google Colab.
+2. Select **Runtime → Run all**.
+3. The notebook automatically downloads the three datasets from Google Drive into `/content/trade_data/`.
+4. It then loads the datasets and performs the documented preprocessing and exploratory data analysis.
+
+The datasets are:
+
+- `un_comtrade_nigeria_2016_2025.csv`: Total import–export data.
+- `commodity_imports_combined.csv`: Commodity-level import records.
+- `commodity_exports_2016_2025`: Commodity-level export records.
+
+The Google Drive files must be accessible to users with the links for automatic downloading to work.
+
+### Option 2: Download datasets for local use
+
+Users who wish to run the Streamlit application locally can download the three datasets from the shared Google Drive folder:
+
+**Dataset folder:** (https://drive.google.com/drive/folders/1d7Rd6zdsP-ddmc8smarkJFACDXT8oTys?usp=drive_link)
+
+After downloading, launch the Streamlit application and upload each dataset into its corresponding import, export or total-trade field.
+
+### Important notes
+
+- Keep the original CSV files unchanged for reproducibility.
+- Commodity codes should be treated as text to preserve leading zeros, such as `0303`.
+- Google Colab's temporary storage may be cleared when the runtime disconnects.
+- The Streamlit application requires all three datasets to run an assessment.
 
 ## Step 1: Get the code
 
