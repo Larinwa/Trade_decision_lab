@@ -1,0 +1,13 @@
+Year,Trade Flow,Partner Country,HS Code,Trade Value,Net Weight,Weight Estimated
+2022,Import,China,8517,100000,2500,false
+2022,Import,Ghana,8517,45000,900,false
+2022,Import,World,8517,145000,3400,false
+2023,Import,China,8517,120000,2800,false
+2023,Import,Ghana,8517,65000,1200,true
+2023,Import,World,8517,185000,4000,false
+2022,Export,United States,2710,80000,1200,false
+2022,Export,Togo,2710,50000,700,false
+2022,Export,World,2710,130000,1900,false
+2023,Export,United States,2710,90000,1300,false
+2023,Export,Togo,2710,60000,800,false
+2023,Export,World,2710,150000,2100,false
